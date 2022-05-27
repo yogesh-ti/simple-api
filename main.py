@@ -1,10 +1,13 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+os.getenv(FULLSTACK_FRONTEND, "")
+
 origins = [
-    "https://3000-rose-reindeer-nbnatsyc.ws.trilogy.devspaces.com/",
+    FULLSTACK_FRONTEND,
 ]
 
 app.add_middleware(
