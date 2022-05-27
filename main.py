@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-os.getenv("FULLSTACK_FRONTEND", "")
+FULLSTACK_FRONTEND = os.getenv("FULLSTACK_FRONTEND", "")
 
 origins = [
     FULLSTACK_FRONTEND,
